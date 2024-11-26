@@ -1,0 +1,167 @@
+
+<div class="background-splash ">
+<app-header></app-header>
+
+<div class="flex-grow container-raffle ">
+    <section class="raffle-contents-container">
+      <div>
+        <img
+          src="../assets/images/sample.png"
+          alt="Raffle 1"
+          id="raffleImage"
+          class="raffle-image"
+        />
+
+        <!-- Radio button group from 1 to 5 -->
+        <div class="raffle-thumb-group">
+          <br />
+          <img
+            src="../assets/images/sample.png"
+            alt="Raffle 1"
+            id=""
+            class="active-img"
+          />
+          <img
+            src="../assets/images/sample.png"
+            alt="Raffle 1"
+            id=""
+            class=""
+          />
+
+          <img
+            src="../assets/images/sample.png"
+            alt="Raffle 1"
+            id=""
+            class=""
+          />
+          <img
+            src="../assets/images/sample.png"
+            alt="Raffle 1"
+            id=""
+            class=""
+          />
+          <br />
+        </div>
+      </div>
+
+      <div class="raffle-item">
+        <h3 class="raffle-landing-title">Demo Raffle Title</h3>
+        <h3 class="raffle-landing-price">Price : 20$</h3>
+        <h3 class="section-title">
+          Available : <span style="color: green">7</span>
+        </h3>
+        <hr />
+
+        <div class="quantity-search-container">
+          <!-- First row: Search Bar with Title -->
+          <div class="search-container">
+            <div class="search-row">
+              <h4 class="section-title">Add by Search</h4>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="search-bar"
+                  placeholder="Search..."
+                />
+                <!-- Search Suggestions (shown on focus or input) -->
+                <ul class="search-suggestions">
+                  <li>Demo Suggestion 1</li>
+                  <li>Demo Suggestion 2</li>
+                  <li>Demo Suggestion 3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second row: Quantity Selector with Title -->
+          <div class="quantity-selector">
+            <div class="quantity-row">
+              <h4 class="section-title">Add by Quantity</h4>
+              <div class="quantity-controls">
+                <button class="quantity-btn minus">-</button>
+                <input
+                  type="number"
+                  class="quantity-field"
+                  value="1"
+                  min="1"
+                />
+                <button class="quantity-btn plus">+</button>
+                <button class="get-btn">Get</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="statistics">
+          <p class="mt-10">
+            <span class="font-semibold">Description</span> <br /><br />
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer took a galley
+            of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was
+            popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of
+            Lorem Ipsum.
+          </p>
+          <hr />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Cart at the bottom -->
+  <div id="overlay" class="hidden"></div>
+  <div class="cart-summary raffle-cart-container">
+    <p>Cart Summary:</p>
+    <div class="toggle-arrow">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-shopping-cart-minus"
+        width="100%"
+        height="100%"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#2c3e50"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+        <path d="M12.5 17h-6.5v-14h-2" />
+        <path d="M6 5l14 1l-1 7h-13" />
+        <path d="M16 19h6" />
+      </svg>
+    </div>
+    <!-- Arrow button -->
+    <hr />
+    <ul class="cart-items-list">
+      <li>
+        <span class="product-name">
+          <span>❌ </span> Sample Raffle x 1</span
+        >
+        <span class="product-price">$12.5</span>
+      </li>
+      <li>
+        <span class="product-name">
+          <span>❌ </span> Sample Raffle x 1</span
+        >
+        <span class="product-price">$12.5</span>
+      </li>
+    </ul>
+    <hr />
+    <div class="total-row">
+      <span>Total:</span>
+      <span class="total-amount">$25.0</span>
+    </div>
+    <div class="checkout-row">
+      <button class="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+<app-footer></app-footer>
+
+</div>

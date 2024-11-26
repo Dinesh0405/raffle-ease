@@ -1,0 +1,110 @@
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body Styling */
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #f9f9f9; /* Light background for the main area */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Common Container for All Pages */
+      .container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        width: 100%;
+        max-width: 1140px; /* Like Bootstrap container-lg */
+        margin: 150px auto;
+      }
+
+      /* Header */
+      header h1 {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        color: #333;
+      }
+
+      /* Links Section */
+      .link-list ul {
+        list-style: none;
+      }
+
+      .link-list ul li {
+        margin: 15px 0;
+      }
+
+      .link-list ul li a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: #715CF8; /* Main link color */
+        transition: color 0.3s ease, transform 0.2s ease;
+      }
+
+      .link-list ul li a:hover {
+        color: #f25c54; /* Hover color */
+        transform: translateX(5px); /* Slight movement effect on hover */
+      }
+
+      /* Footer Section */
+      footer {
+        margin-top: 30px;
+      }
+
+      footer p {
+        font-size: 14px;
+        color: #888; /* Muted text color */
+      }
+
+      /* Media Queries for Responsiveness */
+      /* For Desktops */
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px; /* Large desktops */
+        }
+      }
+
+      /* For Medium-Sized Desktops */
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .container {
+          max-width: 960px; /* Medium desktops */
+        }
+      }
+
+      /* For Tablets and Small Laptops */
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .container {
+          max-width: 720px;
+        }
+        header h1 {
+          font-size: 24px;
+        }
+        .link-list ul li a {
+          font-size: 16px;
+        }
+      }
+
+      /* For Mobile Phones */
+      @media (max-width: 767.98px) {
+        .container {
+          padding: 20px;
+          max-width: 100%;
+        }
+        header h1 {
+          font-size: 20px;
+        }
+        .link-list ul li a {
+          font-size: 14px;
+        }
+      }

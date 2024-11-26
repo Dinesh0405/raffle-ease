@@ -1,0 +1,67 @@
+<div class="login-form-layout-container background-splash ">
+    <div class="login-form-container">
+      <img src="../assets/images/logo.png" alt="Logo" class="logo" />
+      <header>
+        <h1 class="page-title">Admin Login</h1>
+      </header>
+      <form  action="raffle_dashboard.html" method="GET" class="form">
+        <!-- Username Field -->
+        <div class="form-group">
+          <label for="username">Username *</label>
+          <div class="input-field">
+            <img
+              src="../assets/icons/user-icon.svg"
+              alt="User Icon"
+              class="input-icon"
+            />
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your username"
+              required
+              title="Enter your user name here"
+            />
+          </div>
+        </div>
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="password">Password *</label>
+          <div class="input-field">
+            <img
+              src="../assets/icons/password-icon.svg"
+              alt="Password Icon"
+              class="input-icon"
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+              title="Enter your password here"
+            />
+            <img
+            src="../assets/icons/eye-open-icon.svg"
+            alt="Eye Icon"
+            class="eye-icon"
+          />
+          </div>
+        </div>
+        <!-- Remember Me Checkbox -->
+        <div class="form-group">
+          <label class="remember-me">
+            <input type="checkbox" id="remember" name="remember" /> Remember Me
+          </label>
+        </div>
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Log In</button>
+        </div>
+      </form>
+
+      <!-- IP Address Display -->
+      <div class="form-group">
+        <p id="ip-address" style="color: #715CF8; margin-top: 20px; margin-bottom: -10px; font-weight: 500; text-align: end;font-size: 12px;"></p>
+      </div>
+    </div>

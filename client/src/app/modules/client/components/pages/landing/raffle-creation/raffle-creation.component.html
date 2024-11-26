@@ -1,0 +1,121 @@
+<div class=" background-splash">
+<app-header></app-header>
+
+<div class="raffle-form-container">
+    <h1 class="section-title">Create New Raffle</h1>
+    <form action="raffle_dashboard.html" method="GET"  class="form">
+      <!-- Raffle Title Field -->
+      <div class="form-group">
+        <label for="title">Raffle Title</label>
+        <div class="input-field">
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Enter raffle title"
+            required
+          />
+        </div>
+      </div>
+
+      <!-- Raffle Description Field -->
+      <div class="form-group">
+        <label for="description">Raffle Description</label>
+        <div class="input-field">
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Enter raffle description"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+      </div>
+
+      <!-- Start and End Dates Fields (Grid) -->
+      <div class="form-group form-dates grid">
+        <div>
+          <label for="start-date">Start Date</label>
+          <div class="input-field">
+            <input type="date" id="start-date" name="start-date" required />
+          </div>
+        </div>
+        <div>
+          <label for="end-date">End Date</label>
+          <div class="input-field">
+            <input type="date" id="end-date" name="end-date" required />
+          </div>
+        </div>
+      </div>
+
+      <!-- Number of Available Tickets and Ticket Price (Grid) -->
+      <div class="form-group form-tickets grid">
+        <div>
+          <label for="tickets">Number of Available Tickets</label>
+          <div class="input-field">
+            <input
+              type="number"
+              id="tickets"
+              name="tickets"
+              placeholder="Enter number of tickets"
+              required
+            />
+          </div>
+        </div>
+        <div>
+          <label for="price">Ticket Price</label>
+          <div class="input-field">
+            <input
+              type="number"
+              id="price"
+              name="price"
+              placeholder="Enter ticket price"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- First and Last Ticket Number Fields (Grid) -->
+      <div class="form-group form-tickets-range grid">
+        <div>
+          <label for="first-ticket">First Available Ticket Number</label>
+          <div class="input-field">
+            <input
+              type="number"
+              id="first-ticket"
+              name="first-ticket"
+              placeholder="Enter first ticket number"
+              required
+            />
+          </div>
+        </div>
+        <div>
+          <label for="last-ticket">Last Available Ticket Number</label>
+          <div class="input-field">
+            <input
+              type="number"
+              id="last-ticket"
+              name="last-ticket"
+              placeholder="Enter last ticket number"
+              required
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Upload Field -->
+      <div class="form-group">
+        <label for="image-upload">Image Upload</label>
+        <div class="input-field">
+          <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple />
+        </div>
+      </div>
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Create Raffle</button>
+      </div>
+    </form>
+  </div>
+<app-footer></app-footer>
+</div>
